@@ -3,9 +3,13 @@
 #include<android/log.h>
 #include <android/bitmap.h>  //引入头文件还需要在cmake中引入jnigraphics
 #include "blur.h"
-#define TAG "yy" // 这个是自定义的LOG的标识
+#define TAG "yy"
 #define LOGD(...) __android_log_print(ANDROID_LOG_DEBUG,TAG ,__VA_ARGS__) // 定义LOGD类型
-
+/**
+ * <android/bitmap.h>提供了函数接口定义
+ * jnigraphics对应具体的实现，具体怎么确定那个jni和哪个so，可以参照官方文档介绍
+ * https://developer.android.google.cn/ndk/guides/stable_apis
+ */
 extern "C"
 JNIEXPORT void JNICALL
 Java_com_ndksample_blurviewlib_BlurView_blur(JNIEnv *env, jobject instance, jobject bitmap, jint r) {

@@ -6,11 +6,11 @@ import android.view.View
 import android.support.v4.app.Fragment
 import android.view.KeyEvent
 import com.yjz.ndk.sample.R
+import com.yjz.ndk.sample.fragment.function.ExceptionHandleFragment
 import com.yjz.ndk.sample.fragment.function.GlobalAndLocalReferenceFragment
 import com.yjz.ndk.sample.fragment.function.StaticAndDynamicRegisterFragment
-import com.yjz.ndk.sample.fragment.project.BlurViewFragment
 import com.yjz.ndk.sample.util.MyLog
-import kotlinx.android.synthetic.main.activity_project.*
+import kotlinx.android.synthetic.main.activity_function.*
 
 /**
  *
@@ -48,6 +48,13 @@ class FunctionActivity : AppCompatActivity() {
      */
     fun globalAndLocalReference(view : View) {
         changeFragment(GlobalAndLocalReferenceFragment())
+    }
+
+    /**
+     * 异常处理
+     */
+    fun exceptionHandle(view : View) {
+        changeFragment(ExceptionHandleFragment())
     }
 
     private fun changeFragment(fragment: Fragment) {

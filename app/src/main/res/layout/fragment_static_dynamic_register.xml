@@ -4,17 +4,8 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        tools:context=".activity.ProjectActivity">
+        android:orientation="vertical">
 
-    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="原图片："/>
-    <ImageView
-            android:id="@+id/img_old"
-            android:layout_width="200dp"
-            android:layout_height="200dp"/>
-    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="处理后的图片："/>
-    <ImageView
-            android:id="@+id/img_new"
-            android:layout_width="200dp"
-            android:layout_height="200dp"/>
+    <Button android:id="@+id/btn_static" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="静态注册"/>
+    <Button android:id="@+id/btn_dynamic" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="动态注册"/>
 </LinearLayout>

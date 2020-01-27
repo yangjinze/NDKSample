@@ -84,7 +84,7 @@ class StaticAndDynamicRegisterFragment : BaseFragment() {
 
     companion object {
         init {
-            System.loadLibrary("function-lib")
+            System.loadLibrary("static-dynamic-register-lib")
         }
     }
 }

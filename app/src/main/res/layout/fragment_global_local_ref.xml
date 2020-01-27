@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <Button android:id="@+id/btn_create_much_local" android:text="循环创建局部引用" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <Button android:id="@+id/btn_cache_java_local" android:text="缓存java层传入的局部引用" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <Button android:id="@+id/btn_cache_native_local" android:text="缓存native层创建的局部引用" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <Button android:id="@+id/btn_cache_java_global" android:text="将java层传入的缓存为全局引用" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <Button android:id="@+id/btn_cache_native_global" android:text="在native创建全局引用" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <Button android:id="@+id/btn_global_weak" android:text="全局弱引用" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</LinearLayout>
